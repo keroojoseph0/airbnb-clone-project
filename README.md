@@ -121,3 +121,43 @@ Provides advanced search capabilities that allow users to filter properties by l
 7. Admin Dashboard (Optional)
 
 Gives administrators tools to monitor users, properties, bookings, and payments. It includes data insights and moderation features to ensure smooth platform operation and compliance with system rules.
+
+## 🔒 API Security
+
+Security is a fundamental aspect of the Airbnb Clone Project, ensuring that sensitive user data, property details, and financial transactions are protected at all times. The following key security measures will be implemented to safeguard the platform’s integrity and maintain user trust.
+
+1. Authentication
+
+Implementation: JSON Web Tokens (JWT) or Django’s authentication system will be used to verify user identities and control access to the API.
+
+Why It’s Important: Authentication ensures that only legitimate users can access protected resources, preventing unauthorized access to user accounts and sensitive information.
+
+2. Authorization
+
+Implementation: Role-based access control (RBAC) will be applied to define permissions for different user roles (e.g., guest, host, admin).
+
+Why It’s Important: Authorization restricts users from performing actions beyond their privileges — for example, a guest cannot delete another host’s property listing.
+
+3. Data Encryption
+
+Implementation: All communication between the client and server will occur over HTTPS (SSL/TLS), and sensitive data such as passwords will be hashed using bcrypt or Django’s built-in encryption mechanisms.
+
+Why It’s Important: Encryption protects user credentials, personal information, and financial details from being intercepted or tampered with during transmission.
+
+4. Rate Limiting
+
+Implementation: API rate limiting will be configured to restrict the number of requests a user or IP address can make within a certain time frame.
+
+Why It’s Important: Rate limiting prevents Denial-of-Service (DoS) attacks and abuse of the API, ensuring stable and reliable performance for all users.
+
+5. Input Validation & Sanitization
+
+Implementation: The backend will validate and sanitize all incoming data to prevent SQL injection, XSS (Cross-Site Scripting), and other input-based vulnerabilities.
+
+Why It’s Important: Input validation ensures the system only processes safe and expected data, protecting against data corruption and malicious exploitation.
+
+6. Secure Payment Handling
+
+Implementation: Payment data will be processed through trusted third-party payment gateways, and no sensitive card details will be stored on the server.
+
+Why It’s Important: This ensures compliance with PCI DSS standards and protects users from financial fraud and identity theft.
