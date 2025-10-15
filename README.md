@@ -64,3 +64,28 @@ Each team member has a specific role and set of responsibilities that contribute
 | **CI/CD (GitHub Actions / Jenkins)** | Used to automate testing, integration, and deployment, ensuring continuous delivery of updates.                                                 |
 | **JWT Authentication**               | A secure method for handling user authentication and authorization through JSON Web Tokens.                                                     |
 | **React / Next.js (Optional)**       | Frontend frameworks for building responsive and dynamic user interfaces that interact with the backend APIs.                                    |
+
+## 🗄️ Database Design
+
+The database for the Airbnb Clone Project is designed to support user management, property listings, bookings, reviews, and payment processing.
+It follows a relational model to ensure data integrity and efficient querying.
+
+| Entity       | Important Fields                                                        | Description & Relationships                                                                                             |
+| ------------ | ----------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| **User**     | `id`, `username`, `email`, `password`, `role`                           | Represents users of the platform. A user can **own multiple properties** and can also **make multiple bookings**.       |
+| **Property** | `id`, `title`, `description`, `price_per_night`, `location`, `owner_id` | Represents a listed property. Each property is **owned by one user (host)** and can have **many bookings and reviews**. |
+| **Booking**  | `id`, `user_id`, `property_id`, `check_in`, `check_out`, `status`       | Represents a reservation made by a user for a specific property. Each booking **belongs to one user and one property**. |
+| **Review**   | `id`, `user_id`, `property_id`, `rating`, `comment`, `created_at`       | Represents feedback left by a user about a property. Each review **belongs to one user and one property**.              |
+| **Payment**  | `id`, `booking_id`, `amount`, `payment_method`, `status`, `created_at`  | Represents payment information for a booking. Each payment **is linked to a single booking**.                           |
+
+** Entity Relationships Overview ** 
+
+- 👤 User → Property: One-to-Many (a user can list many properties).
+
+- 👤 User → Booking: One-to-Many (a user can make multiple bookings).
+
+- 🏠 Property → Booking: One-to-Many (a property can have multiple bookings).
+
+- 🏠 Property → Review: One-to-Many (a property can have multiple reviews).
+
+- 📅 Booking → Payment: One-to-One (each booking has one payment record).
