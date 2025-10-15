@@ -78,7 +78,7 @@ It follows a relational model to ensure data integrity and efficient querying.
 | **Review**   | `id`, `user_id`, `property_id`, `rating`, `comment`, `created_at`       | Represents feedback left by a user about a property. Each review **belongs to one user and one property**.              |
 | **Payment**  | `id`, `booking_id`, `amount`, `payment_method`, `status`, `created_at`  | Represents payment information for a booking. Each payment **is linked to a single booking**.                           |
 
-** Entity Relationships Overview ** 
+**Entity Relationships Overview**
 
 - 👤 User → Property: One-to-Many (a user can list many properties).
 
@@ -89,3 +89,35 @@ It follows a relational model to ensure data integrity and efficient querying.
 - 🏠 Property → Review: One-to-Many (a property can have multiple reviews).
 
 - 📅 Booking → Payment: One-to-One (each booking has one payment record).
+
+## 🧩 Feature Breakdown
+
+The Airbnb Clone Project includes several core features that together replicate the essential functionality of a modern booking platform. Each feature is designed to reflect real-world software development patterns and promote scalability, security, and maintainability.
+
+1. User Management
+
+Enables users to register, log in, and manage their profiles securely. Authentication and authorization are handled using JWT tokens or Django’s built-in system to protect user data and manage access roles (e.g., guest, host, admin).
+
+2. Property Management
+
+Allows hosts to create, update, and delete property listings. Each property includes key details such as location, price, availability, and description. This feature ensures hosts can manage their listings easily while maintaining accurate and up-to-date information for guests.
+
+3. Booking System
+
+Facilitates the reservation process between guests and property owners. Users can check availability, make bookings for specific dates, and view booking history. The system prevents overlapping reservations to maintain reliability.
+
+4. Review and Rating System
+
+Enables guests to leave reviews and ratings after completing their stay. This feedback helps improve transparency, trust, and user engagement within the platform, allowing future guests to make informed booking decisions.
+
+5. Payment Integration
+
+Handles secure payment processing for confirmed bookings. This includes tracking payment status, transaction amounts, and payment methods. It ensures all transactions are processed safely and efficiently.
+
+6. Search and Filter
+
+Provides advanced search capabilities that allow users to filter properties by location, price range, amenities, and ratings. This improves user experience by helping guests find the most suitable accommodations quickly.
+
+7. Admin Dashboard (Optional)
+
+Gives administrators tools to monitor users, properties, bookings, and payments. It includes data insights and moderation features to ensure smooth platform operation and compliance with system rules.
