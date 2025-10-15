@@ -10,13 +10,13 @@ This project focuses on applying real-world software engineering practices, emph
 - Develop a scalable and secure backend system for property booking.
 
 - Strengthen understanding of backend architecture and database relationships.
-- 
+
 - Practice collaborative development using Git and GitHub workflows.
-- 
+
 - Implement RESTful and GraphQL APIs for seamless data communication.
-- 
+
 - Apply CI/CD pipelines for continuous integration and automated deployment.
-- 
+
 - Integrate strong authentication and authorization mechanisms.
 
 ## 💻 Tech Stack
@@ -50,3 +50,17 @@ Each team member has a specific role and set of responsibilities that contribute
 | **UI/UX Designer**                                           | Focuses on the design and user interaction of the application.                | Creates wireframes, prototypes, and visual designs that ensure intuitive navigation and positive user experience.                                |
 | **Test Automation Engineer**                                 | Builds and maintains automated testing frameworks.                            | Writes scripts to automate repetitive test cases, improving testing speed and reliability.                                                       |
 | **Security Engineer** *(optional, for large-scale projects)* | Protects the system from vulnerabilities and attacks.                         | Conducts security audits, monitors system activity, and ensures compliance with security best practices.                                         |
+
+## ⚙️ Technology Stack
+
+| Technology                           | Purpose in the Project                                                                                                                          |
+| ------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Django**                           | A powerful Python web framework used to build the backend logic, handle requests, manage authentication, and structure the overall application. |
+| **Django REST Framework (DRF)**      | An extension of Django that simplifies the creation of RESTful APIs for smooth communication between the backend and frontend.                  |
+| **MySQL**                            | A relational database used to store and manage structured data such as users, listings, and booking details.                                    |
+| **GraphQL**                          | An API query language that allows clients to request exactly the data they need, improving performance and flexibility.                         |
+| **Git & GitHub**                     | Tools for version control and collaboration, allowing multiple developers to work together efficiently using branching and pull requests.       |
+| **Docker**                           | A containerization platform that ensures consistent application environments across development, testing, and production.                       |
+| **CI/CD (GitHub Actions / Jenkins)** | Used to automate testing, integration, and deployment, ensuring continuous delivery of updates.                                                 |
+| **JWT Authentication**               | A secure method for handling user authentication and authorization through JSON Web Tokens.                                                     |
+| **React / Next.js (Optional)**       | Frontend frameworks for building responsive and dynamic user interfaces that interact with the backend APIs.                                    |
