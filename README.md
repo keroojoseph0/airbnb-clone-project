@@ -161,3 +161,35 @@ Why It’s Important: Input validation ensures the system only processes safe an
 Implementation: Payment data will be processed through trusted third-party payment gateways, and no sensitive card details will be stored on the server.
 
 Why It’s Important: This ensures compliance with PCI DSS standards and protects users from financial fraud and identity theft.
+
+## 🚀 CI/CD Pipeline
+What is CI/CD?
+
+CI/CD (Continuous Integration and Continuous Deployment) is a development practice that automates the process of building, testing, and deploying code.
+
+Continuous Integration (CI): Automatically integrates and tests new code changes to detect errors early.
+
+Continuous Deployment (CD): Ensures that tested and approved code is automatically deployed to the production environment with minimal manual effort.
+
+Why It’s Important for This Project
+
+Implementing a CI/CD pipeline is essential for maintaining a high-quality and reliable codebase in the Airbnb Clone Project.
+It helps the team to:
+
+Detect and fix bugs early through automated testing.
+
+Deploy updates faster and more consistently.
+
+Reduce human error during deployment.
+
+Improve collaboration among developers by maintaining a smooth workflow.
+
+**Tools and Technologies**
+
+| Tool                      | Purpose                                                                                                              |
+| ------------------------- | -------------------------------------------------------------------------------------------------------------------- |
+| **GitHub Actions**        | Automates building, testing, and deploying code whenever changes are pushed to the repository.                       |
+| **Docker**                | Creates consistent environments for development, testing, and deployment by packaging the application in containers. |
+| **Jenkins (Optional)**    | Alternative CI/CD tool for automating build and deployment processes in larger projects.                             |
+| **pytest / unittest**     | Used for automated testing to ensure all API endpoints and logic work correctly before deployment.                   |
+| **AWS / Render / Heroku** | Deployment platforms where the final application can be hosted and scaled securely.                                  |
