@@ -176,13 +176,13 @@ Why It’s Important for This Project
 Implementing a CI/CD pipeline is essential for maintaining a high-quality and reliable codebase in the Airbnb Clone Project.
 It helps the team to:
 
-Detect and fix bugs early through automated testing.
+- Detect and fix bugs early through automated testing.
 
-Deploy updates faster and more consistently.
+- Deploy updates faster and more consistently.
 
-Reduce human error during deployment.
+- Reduce human error during deployment.
 
-Improve collaboration among developers by maintaining a smooth workflow.
+- Improve collaboration among developers by maintaining a smooth workflow.
 
 **Tools and Technologies**
 
